@@ -1,0 +1,19 @@
+.typography{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    &.block{
+        display: block;
+    }
+    &.heading{
+        font-size: clamp(3.125rem, 2.2917rem + 4.1667vw, 5.625rem);
+        font-weight: 600;
+    }
+    &.subheading {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    &.body{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

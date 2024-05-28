@@ -1,0 +1,11 @@
+main{
+    max-inline-size: 1280px;
+    inline-size: 90vw;
+    margin-inline: auto;
+    &>.about{
+        block-size: 100vh;
+        inline-size: 100%;
+        display: grid;
+        place-items: center;
+    }
+}
