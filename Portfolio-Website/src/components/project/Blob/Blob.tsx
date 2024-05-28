@@ -4,7 +4,7 @@ import './Blob.scss'
 let Blob:React.FC<{imgSrc: string}> = ({imgSrc}) => {
   return (
     <>
-      <img src={imgSrc} alt="hero" />
+      <img className='blob-img' src={imgSrc} alt="hero" />
     </>
   )
 }

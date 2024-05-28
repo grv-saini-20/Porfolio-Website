@@ -1,0 +1,10 @@
+.skill-card{
+    border: 1px solid var(--tertiary-900);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    &>img{
+        border-radius: 16px;
+    }
+}

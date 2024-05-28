@@ -11,12 +11,12 @@ interface IProjectCardProps {
 let ProjectCard:React.FC<IProjectCardProps> = ({title, description, link}) => {
 
   return (
-    <div>
-        <Typography type="cardheading">{title}</Typography>
+    <div className="project-card">
+        <Typography type="cardheading" _fontweight="700">{title}</Typography>
         <br />
         <Typography type="body">{description}</Typography>
         <br />
-        <Typography type="subtext"><a href={link}>{link}</a></Typography>
+        <Typography type="subtext" _fontweight="700"><a href={link}>{link}</a></Typography>
     </div>
   )
 }

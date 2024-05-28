@@ -1,0 +1,26 @@
+.project-card{
+    inline-size: 100%;
+    block-size: 100%;
+    max-inline-size: 300px;
+    padding: 20px;
+    background: var(--tertiary-500);
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px var(--tertiary-900);
+    scale: 0.95;
+    -webkit-transition: scale 0.3s ease;
+    -moz-transition: scale 0.3s ease;
+    -o-transition: scale 0.3s ease;
+    transition: scale 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover{
+        scale: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-900);
+    font-weight: 700;
+}
