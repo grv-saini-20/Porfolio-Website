@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeroCard.scss';
 import Typography from '../../ui/Typography/Typography';
-import Blob from "../../Blob/Blob";
+import Blob from "../Blob/Blob";
 
 interface IHeroCardProps {
     heroTitleOne: string;

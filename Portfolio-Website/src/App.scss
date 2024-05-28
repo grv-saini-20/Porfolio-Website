@@ -8,4 +8,9 @@ main{
         display: grid;
         place-items: center;
     }
+    &>.my-works{
+        &>.section-heading{
+            text-align: center;
+        }
+    }
 }

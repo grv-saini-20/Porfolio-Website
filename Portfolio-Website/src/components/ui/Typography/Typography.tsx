@@ -7,7 +7,7 @@ const Typography:React.FC<{
     _color?: string;
     _fontweight?: string;
     renderInline?: boolean;
-    type?: "heading" | "subheading" | "body";
+    type?: "heading" | "subheading" | "cardheading" | "body" | "subtext";
   }> = ({children, _color="var(--secondary-900)", _fontweight="400", renderInline, type = "body"} ) =>  {
   return (
     <span className={`typography ${type} ${!renderInline && 'block'}`} style={{color: _color, fontWeight: _fontweight}}>
