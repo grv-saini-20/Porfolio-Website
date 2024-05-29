@@ -14,9 +14,9 @@ let HeroCard:React.FC<IHeroCardProps> = ({heroTitleOne,heroTitleTwo, heroTitleTh
   return (
     <article className='hero-card'>
         <div className="details">
-            <Typography type="heading" _color='var(--tertiary-900)' _fontweight='700'>{heroTitleOne}</Typography>
-            <Typography type="heading" _color='var(--tertiary-900)' _fontweight='700'>{heroTitleTwo}</Typography>
-            <Typography type="heading" _color='var(--tertiary-900)' _fontweight='700'>{heroTitleThree}</Typography>
+            <Typography type="subheading" _color='var(--primary-900)' _fontweight='300'>{heroTitleOne}</Typography>
+            <Typography type="heading" _color='var(--primary-900)' _fontweight='700'>{heroTitleTwo}</Typography>
+            <Typography type="subheading" _color='var(--primary-900)' _fontweight='300'>{heroTitleThree}</Typography>
         </div>
         <div className="image-section">
             <Blob imgSrc={imgSrc}/>

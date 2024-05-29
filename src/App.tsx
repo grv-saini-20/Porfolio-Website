@@ -2,19 +2,31 @@ import "./App.scss";
 import HeroCard from "./components/project/HeroCard/HeroCard";
 import Me from "./assets/HeroCard/Me.png";
 import JS from "./assets/SkillCard/JS.svg";
+import TS from "./assets/SkillCard/TS.svg";;
+import SCSS from "./assets/SkillCard/SCSS.svg";
+import Svelte from "./assets/SkillCard/Svete.svg"
+import React from "./assets/SkillCard/React.svg";
+import HTML  from "./assets/SkillCard/HTML.svg";
+import CSS from "./assets/SkillCard/CSS.svg";
+import Github from "./assets/SkillCard/GIthub.svg";
+import Phone from "./assets/Socials/Phone.svg";
+import Instagram from "./assets/Socials/Instagram.svg";
+import LinkedIn from "./assets/Socials/Linkedin.svg";
+import GitHub from "./assets/Socials/Git-hub.svg";
+import Email from"./assets/Socials/Email.svg";
 import Typography from "./components/ui/Typography/Typography";
 import ProjectCard from "./components/project/ProjectCard/ProjectCard";
 import SkillCard from "./components/project/SkillCard/SkillCard";
 
 let skills = [
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "React" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "Svelte" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "JavaScript" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "TypeScript" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "TypeScript" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "HTML5" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "CSS3" },
-  { iconSrc: "./assets/SkillCard/JS.svg", skill: "Github" },
+  { iconSrc: React, skill: "React" },
+  { iconSrc: Svelte, skill: "Svelte" },
+  { iconSrc: JS, skill: "JavaScript" },
+  { iconSrc: TS, skill: "TypeScript" },
+  { iconSrc: SCSS, skill: "SCSS" },
+  { iconSrc: HTML, skill: "HTML5" },
+  { iconSrc: CSS, skill: "CSS3" },
+  { iconSrc: Github, skill: "Github" },
 ];
 
 function App() {
@@ -22,9 +34,9 @@ function App() {
     <main>
       <section className="about">
         <HeroCard
-          heroTitleOne="Hi,"
-          heroTitleTwo="I am Gourav"
-          heroTitleThree="Web Developer"
+          heroTitleOne="Hi There!"
+          heroTitleTwo="I am Developer"
+          heroTitleThree="I make the complex simple."
           imgSrc={Me}
         />
       </section>
@@ -32,7 +44,7 @@ function App() {
         <h1 className="section-heading">
           <Typography
             type="subheading"
-            _color="var(--tertiary-900)"
+            _color="var(--primary-900)"
             _fontweight="600"
           >
             My Skills
@@ -40,7 +52,7 @@ function App() {
         </h1>
         <div className="skill-cards">
           {skills.map((item) => (
-            <SkillCard iconSrc={JS} title={item.skill} />
+            <SkillCard iconSrc={item.iconSrc} title={item.skill} />
           ))}
         </div>
       </section>
@@ -48,7 +60,7 @@ function App() {
         <h1 className="section-heading">
           <Typography
             type="subheading"
-            _color="var(--tertiary-900)"
+            _color="var(--primary-900)"
             _fontweight="600"
           >
             My Works
@@ -76,7 +88,7 @@ function App() {
           <Typography
             type="subheading"
             _fontweight="600"
-            _color="var(--tertiary-900)"
+            _color="var(--primary-900)"
           >
             Contact
           </Typography>
@@ -84,10 +96,11 @@ function App() {
         <div className="contact-links">
           <ul>
             <li>
+              <img className="social" src={Phone} alt="phone" />
               <a href="tel:+919671513142">
                 <Typography
                   type="body"
-                  _color="var(--tertiary-700)"
+                  _color="var(--primary-900)"
                   _fontweight="700"
                 >
                   +919671513142
@@ -95,10 +108,11 @@ function App() {
               </a>
             </li>
             <li>
+            <img className="social" src={Email} alt="email" />
               <a href="mailto:gouravsaini9797@gmail.com">
                 <Typography
                   type="body"
-                  _color="var(--tertiary-700)"
+                  _color="var(--primary-900)"
                   _fontweight="700"
                 >
                   gouravsaini9797@gmail.com
@@ -106,10 +120,11 @@ function App() {
               </a>
             </li>
             <li>
+              <img className="social" src={GitHub} alt="github" />
               <a href="https://github.com/grv-saini-20">
                 <Typography
                   type="body"
-                  _color="var(--tertiary-700)"
+                  _color="var(--primary-900)"
                   _fontweight="700"
                 >
                   Github
@@ -117,10 +132,11 @@ function App() {
               </a>
             </li>
             <li>
+              <img className="social" src={LinkedIn} alt="linkedin" />
               <a href="/">
                 <Typography
                   type="body"
-                  _color="var(--tertiary-700)"
+                  _color="var(--primary-900)"
                   _fontweight="700"
                 >
                   LinkedIn
@@ -128,10 +144,11 @@ function App() {
               </a>
             </li>
             <li>
+              <img className="social" src={Instagram} alt="instagram" />
               <a href="/">
                 <Typography
                   type="body"
-                  _color="var(--tertiary-700)"
+                  _color="var(--primary-900)"
                   _fontweight="700"
                 >
                   Instagram

@@ -7,19 +7,20 @@
 }
 
 body {
-  background-color: #e7e7e7;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 :root {
   --body-font: "Space Grotesk", sans-serif;
 
   --primary-900: #ffffff;
-  --primary-700: #e7e7e7;
+  --primary-700: #f2f2f2;
+  --primary-500: #dbdbdb;
   --secondary-900: #000000;
-  --secondary-700: #636363;
-  --tertiary-900: #1a0057;
-  --tertiary-700: #2a2aa0;
-  --tertiary-500: #6161d4;
-  --tertiary-300: #c5c5fa;
+  --secondary-700: #1d1c1c;
+  --secondary-500:#535353;
+  --tertiary-900: #006d0f;
+  --tertiary-700: #27bd3b;
+  --tertiary-500: #43e459;
 }

@@ -4,7 +4,6 @@ main{
     margin-inline: auto;
     padding-block: 5rem;
     &>.about{
-        block-size: 100vh;
         inline-size: 100%;
         display: grid;
         place-items: center;
@@ -14,11 +13,18 @@ main{
             text-align: center;
         }
         &>.skill-cards{
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
             justify-content: center;
             align-items: center;
             gap: 20px;
             flex-wrap: wrap;
+            @media screen and (width < 768px) {
+                grid-template-columns: repeat(3,auto);
+            }
+            @media screen and (width < 400px) {
+                grid-template-columns: repeat(2,auto);
+            }
         }
     }
     &>.my-works{
