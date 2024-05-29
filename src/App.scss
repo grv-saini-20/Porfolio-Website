@@ -94,6 +94,7 @@ main{
        }
     }
     &>.contact{
+        display: none;
         margin-block: 3rem;
         &>.section-heading{
             text-align: center;
