@@ -1,5 +1,5 @@
 import './App.scss'
-import HeroCard from './components/project/HeroCard/HeroCard'
+import HeroCard from './components/project/HeroCard/HeroCard';
 import Me from "./assets/HeroCard/Me.png";
 import JS from "./assets/SkillCard/JS.svg";
 import Typography from './components/ui/Typography/Typography';
@@ -37,11 +37,11 @@ function App() {
       </h1>
       <div className="contact-links">
         <ul>
-          <li><a href="tel:+919671513142"><Typography type="body" _color='var(--tertiary-900)' _fontweight='700'>+919671513142</Typography></a></li>
-          <li><a href="mailto:gouravsaini9797@gmail.com"><Typography type="body" _color='var(--tertiary-900)' _fontweight='700'>gouravsaini9797@gmail.com</Typography></a></li>
-          <li><a href="https://github.com/grv-saini-20"><Typography type="body" _color='var(--tertiary-900)' _fontweight='700'>Github</Typography></a></li>
-          <li><a href="/"><Typography type="body" _color='var(--tertiary-900)' _fontweight='700'>LinkedIn</Typography></a></li>
-          <li><a href="/"><Typography type="body" _color='var(--tertiary-900)' _fontweight='700'>Instagram</Typography></a></li>
+          <li><a href="tel:+919671513142"><Typography type="body" _color='var(--tertiary-700)' _fontweight='700'>+919671513142</Typography></a></li>
+          <li><a href="mailto:gouravsaini9797@gmail.com"><Typography type="body" _color='var(--tertiary-700)' _fontweight='700'>gouravsaini9797@gmail.com</Typography></a></li>
+          <li><a href="https://github.com/grv-saini-20"><Typography type="body" _color='var(--tertiary-700)' _fontweight='700'>Github</Typography></a></li>
+          <li><a href="/"><Typography type="body" _color='var(--tertiary-700)' _fontweight='700'>LinkedIn</Typography></a></li>
+          <li><a href="/"><Typography type="body" _color='var(--tertiary-700)' _fontweight='700'>Instagram</Typography></a></li>
         </ul>
       </div>
     </section>

@@ -12,7 +12,7 @@ interface IHeroCardProps {
 
 let HeroCard:React.FC<IHeroCardProps> = ({heroTitleOne,heroTitleTwo, heroTitleThree, imgSrc}) => {
   return (
-    <article>
+    <article className='hero-card'>
         <div className="details">
             <Typography type="heading" _color='var(--tertiary-900)' _fontweight='700'>{heroTitleOne}</Typography>
             <Typography type="heading" _color='var(--tertiary-900)' _fontweight='700'>{heroTitleTwo}</Typography>

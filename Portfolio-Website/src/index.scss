@@ -7,17 +7,19 @@
 }
 
 body{
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #e7e7e7;
+  color: #000000;
 }
 
 :root {
   --body-font: "Space Grotesk", sans-serif;
 
   --primary-900: #ffffff;
-  --secondary-900: #222222;
+  --primary-700: #e7e7e7;
+  --secondary-900: #000000;
   --secondary-700: #636363;
-  --tertiary-900: #3232b9;
-  --tertiary-700: #4b4bda;
-  --tertiary-500: #c2c2fc;
+  --tertiary-900: #1a0057;
+  --tertiary-700: #2a2aa0;
+  --tertiary-500: #6161d4;
+  --tertiary-300: #a7a7f8;
 }

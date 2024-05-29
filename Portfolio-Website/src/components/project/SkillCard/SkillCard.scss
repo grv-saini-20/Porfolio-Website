@@ -1,10 +1,10 @@
 .skill-card{
     border: 1px solid var(--tertiary-900);
     border-radius: 16px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    padding-block: 20px;
+    background-color: var(--tertiary-300);
     &>img{
         border-radius: 16px;
+        image-rendering:optimizeSpeed;
     }
 }
