@@ -6,6 +6,8 @@ import Typography from './components/ui/Typography/Typography';
 import ProjectCard from './components/project/ProjectCard/ProjectCard';
 import SkillCard from './components/project/SkillCard/SkillCard';
 
+let skills = [{iconSrc: "./assets/SkillCard/JS.svg", skill: "React"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "Svelte"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "JavaScript"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "TypeScript"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "TypeScript"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "HTML5"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "CSS3"},{iconSrc: "./assets/SkillCard/JS.svg", skill: "Github"}]
+
 function App() {
   return (
     <main>
@@ -15,8 +17,12 @@ function App() {
     <section className="skills">
     <h1 className='section-heading'>
       <Typography type="subheading" _color='var(--tertiary-900)' _fontweight='600'>My Skills</Typography>
-      <SkillCard iconSrc={JS} title="JavaScript"/>
     </h1>
+      <div className="skill-cards">
+      {skills.map((item)=> 
+        <SkillCard iconSrc={item.iconSrc} title={item.skill}/>
+      )}
+      </div>
     </section>
     <section className="my-works">
       <h1 className='section-heading'>

@@ -10,17 +10,18 @@ main{
         place-items: center;
     }
     &>.skills{
-        block-size: 100vh;
-        display: grid;
-        place-items: center;
         &>.section-heading{
             text-align: center;
         }
+        &>.skill-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
     &>.my-works{
-        block-size: 100vh;
-        display: grid;
-        place-items: center;
         &>.section-heading{
             text-align: center;
         }
