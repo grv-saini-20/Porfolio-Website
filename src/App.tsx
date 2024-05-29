@@ -94,7 +94,7 @@ function App() {
         </div>
         </div>
       </section>
-      <section className="contact">
+      {/* <section className="contact">
         <h1 className="section-heading">
           <Typography
             type="subheading"
@@ -168,7 +168,7 @@ function App() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
