@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #e7e7e7;
   color: #000000;
 }
@@ -21,5 +21,5 @@ body{
   --tertiary-900: #1a0057;
   --tertiary-700: #2a2aa0;
   --tertiary-500: #6161d4;
-  --tertiary-300: #a7a7f8;
+  --tertiary-300: #c5c5fa;
 }
