@@ -1,6 +1,7 @@
 import "./App.scss";
 import HeroCard from "./components/project/HeroCard/HeroCard";
 import Me from "./assets/HeroCard/Me.png";
+import Me2 from "./assets/HeroCard/Me2.jpeg";
 import JS from "./assets/SkillCard/JS.svg";
 import TS from "./assets/SkillCard/TS.svg";;
 import SCSS from "./assets/SkillCard/SCSS.svg";
@@ -17,6 +18,7 @@ import Email from"./assets/Socials/Email.svg";
 import Typography from "./components/ui/Typography/Typography";
 import ProjectCard from "./components/project/ProjectCard/ProjectCard";
 import SkillCard from "./components/project/SkillCard/SkillCard";
+import AboutCard from "./components/project/AboutCard/AboutCard";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -40,23 +42,31 @@ function App() {
           imgSrc={Me}
         />
       </section>
+      <section className="about-me">
+        <AboutCard imgSrc={Me2} heading="Who am i?" aboutMe="I'm Gourav Saini, a Web Developer" description="A passionate Frontend Developer over a 1+ years of experience with a drive to create exceptional user experiences through the use of HTML, CSS, and JavaScript. Seeking a position to leverage strong technical and problem-solving skills and extensive web development knowledge to achieve organizational efficiency, reduce page load speeds, and optimize user interfaces." namelabel="Name:" name="Gourav Saini" ageLabel="Age:" age={27} emailLabel="Email:" email="gouravsaini9797@gmail.com" from="Ambala|India" fromLabel="From:"/>
+      </section>
       <section className="skills">
+        <div className="container">
         <h1 className="section-heading">
           <Typography
             type="subheading"
             _color="var(--primary-900)"
             _fontweight="600"
-          >
+            >
             My Skills
           </Typography>
         </h1>
         <div className="skill-cards">
           {skills.map((item) => (
+            <div className="card">
             <SkillCard iconSrc={item.iconSrc} title={item.skill} />
+            </div>
           ))}
+        </div>
         </div>
       </section>
       <section className="my-works">
+        <div className="container">
         <h1 className="section-heading">
           <Typography
             type="subheading"
@@ -81,6 +91,7 @@ function App() {
             description="Wrkble is an online learning platform where users can purchase courses to enhance their skills. Each course is designed by experts and includes interactive materials like video lectures, readings, quizzes, and assignments to ensure an engaging learning experience. Learners can monitor their progress through assignments and projects, and upon completing a course, they receive a certificate. Wrkble's flexible, self-paced learning model allows users to study at their convenience."
             link="https://wrkble.com/"
           />
+        </div>
         </div>
       </section>
       <section className="contact">

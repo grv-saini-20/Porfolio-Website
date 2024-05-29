@@ -1,0 +1,35 @@
+.about-card{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    @media screen and (width < 768px) {
+        grid-template-columns: auto;
+    }
+    &>.hero-image{
+        inline-size: 100%;
+        image-rendering: optimizeSpeed;
+        object-fit: cover;
+        @media screen and (width < 768px) {
+            display: none;
+        }
+    }
+    &>.about-details{
+        &>.personal{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            justify-content: flex-start;
+            gap: 10px 50px; 
+            @media screen and (width < 768px) {
+                grid-template-columns: auto;
+            }
+            &>.info{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+        }
+    }
+}
