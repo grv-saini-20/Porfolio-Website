@@ -19,6 +19,7 @@ import Typography from "./components/ui/Typography/Typography";
 import ProjectCard from "./components/project/ProjectCard/ProjectCard";
 import SkillCard from "./components/project/SkillCard/SkillCard";
 import AboutCard from "./components/project/AboutCard/AboutCard";
+import CV from "./assets/HeroCard/Cv.pdf";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -37,13 +38,15 @@ function App() {
       <section className="about">
         <HeroCard
           heroTitleOne="Hi There!"
-          heroTitleTwo="I am Developer"
+          heroTitleTwo="I am a"
           heroTitleThree="I make the complex simple."
           imgSrc={Me}
+          buttonLabel="Contact"
+          specialHeading="Developer"
         />
       </section>
       <section className="about-me">
-        <AboutCard imgSrc={Me2} heading="Who am i?" aboutMe="I'm Gourav Saini, a Web Developer" description="A passionate Frontend Developer over a 1+ years of experience with a drive to create exceptional user experiences through the use of HTML, CSS, and JavaScript. Seeking a position to leverage strong technical and problem-solving skills and extensive web development knowledge to achieve organizational efficiency, reduce page load speeds, and optimize user interfaces." namelabel="Name:" name="Gourav Saini" ageLabel="Age:" age={27} emailLabel="Email:" email="gouravsaini9797@gmail.com" from="Ambala|India" fromLabel="From:"/>
+        <AboutCard imgSrc={Me2} heading="Who am I?" aboutMe="I'm Gourav Saini, a Web Developer" description="A passionate Frontend Developer over a 1+ years of experience with a drive to create exceptional user experiences through the use of HTML, CSS, and JavaScript. Seeking a position to leverage strong technical and problem-solving skills and extensive web development knowledge to achieve organizational efficiency, reduce page load speeds, and optimize user interfaces." namelabel="Name:" name="Gourav Saini" ageLabel="Age:" age={27} emailLabel="Email:" email="gouravsaini9797@gmail.com" from="Ambala|India" fromLabel="From:" buttonLabel="Download CV" cvPath={CV}/>
       </section>
       <section className="skills">
         <div className="container">

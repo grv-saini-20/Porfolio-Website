@@ -11,11 +11,17 @@
         inline-size: 100%;
         image-rendering: optimizeSpeed;
         object-fit: cover;
+        border-radius: 10px;
         @media screen and (width < 768px) {
             display: none;
         }
     }
     &>.about-details{
+        &>.divider{
+            inline-size: 100%;
+            block-size: 1px;
+            background-color: var(--secondary-500);
+        }
         &>.personal{
             display: grid;
             grid-template-columns: repeat(2,auto);
@@ -30,6 +36,14 @@
                 justify-content: flex-start;
                 gap: 10px;
             }
+        }
+        &>.download-cv{
+            display: inline-block;
+            text-align: center;
+            inline-size: 150px;
+            background-color: var(--tertiary-900);
+            padding: 10px;
+            border-radius: 6px;
         }
     }
 }

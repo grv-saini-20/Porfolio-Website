@@ -7,4 +7,14 @@
     @media screen and (width < 768px) {
         grid-template-columns: 100%;
     }
+    &>.details{
+        &>.mail-to{
+            display: inline-block;
+            text-align: center;
+            inline-size: 150px;
+            background-color: var(--tertiary-900);
+            padding: 10px;
+            border-radius: 6px;
+        }
+    }
 }
