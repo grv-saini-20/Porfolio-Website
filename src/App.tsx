@@ -148,7 +148,7 @@ function App() {
             </li>
             <li className="link">
               <img className="social" src={LinkedIn} alt="linkedin" />
-              <a href="/">
+              <a href="https://www.linkedin.com/in/gourav-saini-aa5454141?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                 <Typography
                   type="body"
                   _color="var(--primary-900)"
@@ -160,7 +160,7 @@ function App() {
             </li>
             <li className="link">
               <img className="social" src={Instagram} alt="instagram" />
-              <a href="/">
+              <a href="https://www.instagram.com/gouraaaaaav?igsh=YXR1YzBsYTQ5dTJm&utm_source=qr">
                 <Typography
                   type="body"
                   _color="var(--primary-900)"
