@@ -34,7 +34,7 @@ let skills = [
 
 function App() {
   return (
-    <main>
+    <main className="main">
       <section className="about">
         <HeroCard
           heroTitleOne="Hi There!"
@@ -98,6 +98,7 @@ function App() {
         </div>
       </section>
       <section className="contact">
+        <div className="container">
         <h1 className="section-heading">
           <Typography
             type="subheading"
@@ -108,8 +109,8 @@ function App() {
           </Typography>
         </h1>
         <div className="contact-links">
-          <ul>
-            <li>
+          <ul className="links">
+            <li className="link">
               <img className="social" src={Phone} alt="phone" />
               <a href="tel:+919671513142">
                 <Typography
@@ -121,7 +122,7 @@ function App() {
                 </Typography>
               </a>
             </li>
-            <li>
+            <li className="link">
             <img className="social" src={Email} alt="email" />
               <a href="mailto:gouravsaini9797@gmail.com">
                 <Typography
@@ -133,7 +134,7 @@ function App() {
                 </Typography>
               </a>
             </li>
-            <li>
+            <li className="link">
               <img className="social" src={GitHub} alt="github" />
               <a href="https://github.com/grv-saini-20">
                 <Typography
@@ -145,7 +146,7 @@ function App() {
                 </Typography>
               </a>
             </li>
-            <li>
+            <li className="link">
               <img className="social" src={LinkedIn} alt="linkedin" />
               <a href="/">
                 <Typography
@@ -157,7 +158,7 @@ function App() {
                 </Typography>
               </a>
             </li>
-            <li>
+            <li className="link">
               <img className="social" src={Instagram} alt="instagram" />
               <a href="/">
                 <Typography
@@ -170,6 +171,7 @@ function App() {
               </a>
             </li>
           </ul>
+        </div>
         </div>
       </section>
     </main>
