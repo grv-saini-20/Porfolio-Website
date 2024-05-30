@@ -122,8 +122,9 @@
           list-style: none;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
           gap: 50px;
+          flex-wrap: wrap;
           @media screen and (width < 768px) {
             flex-direction: column;
             align-items: center;
