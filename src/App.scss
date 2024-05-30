@@ -117,12 +117,13 @@
       & > .contact-links {
         margin-block: 3rem;
         & > .links {
-          max-inline-size: 800px;
+          max-inline-size: 1280px;
           margin-inline: auto;
           list-style: none;
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 50px;
           @media screen and (width < 768px) {
             flex-direction: column;
             align-items: center;
@@ -131,6 +132,7 @@
           &>.link{
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 10px;
             @media screen and (width < 768px) {
               flex-direction: column;
