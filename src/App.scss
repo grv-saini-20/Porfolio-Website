@@ -1,9 +1,15 @@
 .main {
+  block-size: 100vh;
   max-inline-size: 1280px;
   inline-size: 90vw;
   margin-inline: auto;
   padding-block: 5rem;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scrollbar-width: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   & > .about {
     scroll-snap-align: center;
     inline-size: 100%;
@@ -110,7 +116,7 @@
     min-block-size: 100vh;
     display: grid;
     place-items: center;
-    & > .container{
+    & > .container {
       & > .section-heading {
         text-align: center;
       }
@@ -130,7 +136,7 @@
             align-items: center;
             gap: 20px;
           }
-          &>.link{
+          & > .link {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -140,11 +146,11 @@
               align-items: center;
               gap: 20px;
             }
-            &>.social{
+            & > .social {
               inline-size: 20px;
               display: inline-block;
             }
-            &>a{
+            & > a {
               display: inline-block;
             }
           }
