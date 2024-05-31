@@ -20,8 +20,8 @@
   }
   & > .about-me {
     scroll-snap-align: center;
-    min-block-size: 100vh;
     margin-block: 15rem;
+    min-block-size: 100vh;
     display: grid;
     place-items: center;
   }
