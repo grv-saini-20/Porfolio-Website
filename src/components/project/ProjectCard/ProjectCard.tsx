@@ -26,7 +26,9 @@ let ProjectCard: React.FC<IProjectCardProps> = ({
       <Typography type="body">{description}</Typography>
       <br />
       <Typography type="subtext" _fontweight="700">
-        <a href={link}>{link}</a>
+        <a href={link} target="_blank">
+          {link}
+        </a>
       </Typography>
     </div>
   );
