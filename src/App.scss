@@ -102,11 +102,15 @@
       & > .projects {
         inline-size: 100%;
         display: flex;
-        justify-content: center;
         align-items: stretch;
-        flex-wrap: wrap;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
         gap: 20px;
         margin-block: 3rem;
+        scrollbar-width: none;
+        ::-webkit-scrollbar{
+          display: none;
+        }
       }
     }
   }

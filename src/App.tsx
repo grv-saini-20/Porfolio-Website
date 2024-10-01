@@ -25,6 +25,7 @@ import StoneTekk from "./assets/ProjectCard/StoneTekk.png";
 import SPS from "./assets/ProjectCard/SPS.png";
 import Artekk from "./assets/ProjectCard/Artekk.png";
 import Dwc from "./assets/ProjectCard/Dwc.png";
+import { useRef, useState } from "react";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -38,6 +39,38 @@ let skills = [
 ];
 
 function App() {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [isDown, setIsDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e:React.MouseEvent<HTMLDivElement>) => {
+    const slider = sliderRef.current;
+    if(!slider) return;
+
+    setIsDown(true);
+    setStartX(e.pageX -  slider.offsetLeft);
+    setScrollLeft(slider.scrollLeft);
+  }
+
+  const handleMouseLeave = () => {
+    setIsDown(false);
+  }
+
+  const handleMouseUp = () => {
+    setIsDown(false);
+  }
+
+  const handleMouseMove = (e:React.MouseEvent<HTMLDivElement>) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const slider = sliderRef.current;
+    if(!slider) return;
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2;
+    slider.scrollLeft = scrollLeft - walk;
+  }
+
   return (
     <main className="main">
       <section className="about">
@@ -99,7 +132,7 @@ function App() {
               My Works
             </Typography>
           </h1>
-          <div className="projects">
+          <div className="projects" ref={sliderRef} onMouseDown={(e) => handleMouseDown(e)} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={(e) => handleMouseMove(e)}>
             <ProjectCard
               title="StoneTEKK"
               imgSrc={StoneTekk}

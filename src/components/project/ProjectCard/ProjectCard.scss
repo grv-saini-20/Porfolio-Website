@@ -1,6 +1,5 @@
 .project-card {
-  inline-size: 100%;
-  max-inline-size: 350px;
+  min-inline-size: 320px;
   padding: 20px;
   background: var(--secondary-700);
   border-radius: 16px;
