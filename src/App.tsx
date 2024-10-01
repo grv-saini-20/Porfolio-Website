@@ -20,6 +20,11 @@ import ProjectCard from "./components/project/ProjectCard/ProjectCard";
 import SkillCard from "./components/project/SkillCard/SkillCard";
 import AboutCard from "./components/project/AboutCard/AboutCard";
 import CV from "./assets/HeroCard/Cv.pdf";
+import Wrkble from "./assets/ProjectCard/Wrkble.png";
+import StoneTekk from "./assets/ProjectCard/StoneTekk.png";
+import SPS from "./assets/ProjectCard/SPS.png";
+import Artekk from "./assets/ProjectCard/Artekk.png";
+import Dwc from "./assets/ProjectCard/Dwc.png";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -97,16 +102,32 @@ function App() {
           <div className="projects">
             <ProjectCard
               title="StoneTEKK"
-              description="StoneTEKK is here to revolutionize the Stone Industry with an automated management system. Using
-		stone has always been an integral part of human civilization and plays a peculiar role in
-		shaping the establishment. The stone industry has always worked conventionally and undoubtedly
-		has been quite tedious for the employer and the client in getting the deals, a better
-		understanding of stone, etc."
+              imgSrc={StoneTekk}
+              description="StoneTEKK automates the stone industry, simplifying operations and improving the client experience. It modernizes traditional processes for better efficiency."
               link="https://www.stonetekk.in/"
             />
             <ProjectCard
+              title="ARTekk"
+              imgSrc={Artekk}
+              description="Artekk creates AR-driven Virtual Try-On experiences, blending physical and digital worlds to enhance shopping and user experiences across industries."
+              link="https://artekk.io/"
+            />
+            <ProjectCard
+              title="DWC"
+              imgSrc={Dwc}
+              description="I worked with DWC, leading projects that transformed visions into high-quality, innovative structures, setting new standards in real estate construction."
+              link="https://dwcinfra.com/"
+            />
+            <ProjectCard
+              title="SPS Realty"
+              imgSrc={SPS}
+              description="I collaborated with a purpose-driven real estate company focused on innovative residential projects. With nearly 30 years of experience and over 900 completed projects, we enhance lifestyles and strengthen communities."
+              link="https://spsrealty.in/"
+            />
+            <ProjectCard
               title="Wrkble"
-              description="Wrkble is an online learning platform where users can purchase courses to enhance their skills. Each course is designed by experts and includes interactive materials like video lectures, readings, quizzes, and assignments to ensure an engaging learning experience. Learners can monitor their progress through assignments and projects, and upon completing a course, they receive a certificate. Wrkble's flexible, self-paced learning model allows users to study at their convenience."
+              imgSrc={Wrkble}
+              description="Wrkble offers expert-designed, self-paced courses with interactive materials. Learners track progress and earn certificates upon completion."
               link="https://wrkble.com/"
             />
           </div>

@@ -1,12 +1,12 @@
-.skill-card{
+.skill-card {
+  border-radius: 16px;
+  padding: 10px;
+  background-color: var(--secondary-700);
+  text-align: center;
+  & > img {
+    inline-size: 100px;
     border-radius: 16px;
-    padding: 10px;
-    background-color: var(--secondary-700);
-    text-align: center;
-    &>img{
-        inline-size: 80px;
-        border-radius: 16px;
-        image-rendering:optimizeSpeed;
-        margin-block-end: 5px;
-    }
+    image-rendering: optimizeSpeed;
+    margin-block-end: 5px;
+  }
 }
