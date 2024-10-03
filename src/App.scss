@@ -96,6 +96,7 @@
     min-block-size: 100vh;
     margin-block-end: 15rem;
     & > .container {
+      padding-block-start: 50vh;
       & > .section-heading {
         text-align: center;
       }
