@@ -6,8 +6,8 @@
         inline-size: 100px;
         block-size: 100px;
         border-radius: 50%;
-        box-shadow: 0 0 100px var(--tertiary-500);
-        background-color: var(--tertiary-500);
+        box-shadow: 0 0 100px #ffccbc;
+        background-color: #ffccbc;
         filter: blur(20px);
         animation: rotate-circle-one 6s linear infinite;
     }
