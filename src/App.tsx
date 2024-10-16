@@ -27,6 +27,7 @@ import Artekk from "./assets/ProjectCard/Artekk.png";
 import Dwc from "./assets/ProjectCard/Dwc.png";
 import { useRef, useState } from "react";
 import Abstract from "./components/project/Abstract/Abstract";
+import logo from "./assets/HeroCard/Logo.svg";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -74,7 +75,10 @@ function App() {
 
   return (
     <main className="main">
-      <section className="about">
+      <nav className="nav-bar">
+      <img src={logo} alt="logo" height="50px"/>
+      </nav>
+      <section className="about" data-label="hero">
         <HeroCard
           heroTitleOne="Hi There!"
           heroTitleTwo="I am a"
@@ -84,12 +88,12 @@ function App() {
           specialHeading="Developer"
         />
       </section>
-      <section className="about-me">
+      <section className="about-me" data-label="about">
         <AboutCard
           imgSrc={Me2}
           heading="Who am I?"
           aboutMe="I'm Gourav Saini, a Web Developer"
-          description="I am a frontend developer with one year of experience specializing in creating responsive, user-friendly web applications. My expertise includes HTML, CSS, JavaScript, and frameworks like React and Svelte. I have developed various projects, including a personal portfolio website, an e-commerce site, and a task management tool. I am proficient in using tools like Git, npm, and Visual Studio Code and have a solid understanding of UI/UX principles. I am passionate about coding, constantly learning new technologies, and eager to take on challenging projects to enhance my skills further."
+          description="I am a frontend developer with two year of experience specializing in creating responsive, user-friendly web applications. My expertise includes HTML, CSS, JavaScript, and frameworks like React and Svelte. I have developed various projects, including a personal portfolio website, an e-commerce site, and a task management tool. I am proficient in using tools like Git, npm, and Visual Studio Code and have a solid understanding of UI/UX principles. I am passionate about coding, constantly learning new technologies, and eager to take on challenging projects to enhance my skills further."
           namelabel="Name:"
           name="Gourav Saini"
           ageLabel="Age:"
@@ -125,7 +129,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="my-works">
+      <section className="my-works" data-label="work">
         <div className="container">
           <h1 className="section-heading">
             <Typography
@@ -170,7 +174,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="contact">
+      <section className="contact" data-label="contact">
         <div className="container">
           <h1 className="section-heading">
             <Typography
