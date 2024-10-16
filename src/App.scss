@@ -23,11 +23,18 @@
     padding-block-start: 5rem;
   }
   & > .about-me {
+    position: relative;
     // scroll-snap-align: start;
     margin-block: 15rem;
     min-block-size: 100vh;
     display: grid;
     place-items: center;
+    &>.design{
+      position: absolute;
+      inset-inline-end: 20%;
+      inset-block-start: 30%;
+      z-index: -1;
+    }
   }
   & > .skills {
     // scroll-snap-align: start;

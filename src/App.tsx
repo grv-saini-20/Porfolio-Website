@@ -26,6 +26,7 @@ import SPS from "./assets/ProjectCard/SPS.png";
 import Artekk from "./assets/ProjectCard/Artekk.png";
 import Dwc from "./assets/ProjectCard/Dwc.png";
 import { useRef, useState } from "react";
+import Abstract from "./components/project/Abstract/Abstract";
 
 let skills = [
   { iconSrc: React, skill: "React" },
@@ -100,6 +101,9 @@ function App() {
           buttonLabel="Download CV"
           cvPath={CV}
         />
+        <div className="design">
+        <Abstract/>
+        </div>
       </section>
       <section className="skills">
         <div className="container">
