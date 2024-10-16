@@ -106,7 +106,7 @@ function App() {
           <h1 className="section-heading">
             <Typography
               type="subheading"
-              _color="var(--primary-900)"
+              _color="var(--tertiary-900)"
               _fontweight="600"
             >
               My Skills
@@ -126,7 +126,7 @@ function App() {
           <h1 className="section-heading">
             <Typography
               type="subheading"
-              _color="var(--primary-900)"
+              _color="var(--tertiary-700)"
               _fontweight="600"
             >
               My Works
@@ -172,7 +172,7 @@ function App() {
             <Typography
               type="subheading"
               _fontweight="600"
-              _color="var(--primary-900)"
+              _color="var(--tertiary-700)"
             >
               Contact
             </Typography>
@@ -184,7 +184,7 @@ function App() {
                 <a href="tel:+919671513142">
                   <Typography
                     type="body"
-                    _color="var(--primary-900)"
+                    _color="var(--tertiary-900)"
                     _fontweight="700"
                   >
                     +919671513142
@@ -196,7 +196,7 @@ function App() {
                 <a href="mailto:gouravsaini9797@gmail.com">
                   <Typography
                     type="body"
-                    _color="var(--primary-900)"
+                    _color="var(--tertiary-900)"
                     _fontweight="700"
                   >
                     gouravsaini9797@gmail.com
@@ -208,7 +208,7 @@ function App() {
                 <a href="https://github.com/grv-saini-20">
                   <Typography
                     type="body"
-                    _color="var(--primary-900)"
+                    _color="var(--tertiary-900)"
                     _fontweight="700"
                   >
                     Github
@@ -220,7 +220,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/gourav-saini-aa5454141?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                   <Typography
                     type="body"
-                    _color="var(--primary-900)"
+                    _color="var(--tertiary-900)"
                     _fontweight="700"
                   >
                     LinkedIn
@@ -232,7 +232,7 @@ function App() {
                 <a href="https://www.instagram.com/gouraaaaaav?igsh=YXR1YzBsYTQ5dTJm&utm_source=qr">
                   <Typography
                     type="body"
-                    _color="var(--primary-900)"
+                    _color="var(--tertiary-900)"
                     _fontweight="700"
                   >
                     Instagram

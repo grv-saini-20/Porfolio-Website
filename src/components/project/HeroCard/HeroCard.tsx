@@ -16,9 +16,9 @@ let HeroCard:React.FC<IHeroCardProps> = ({heroTitleOne,heroTitleTwo, heroTitleTh
   return (
     <article className='hero-card'>
         <div className="details">
-            <Typography type="subheading" _color='var(--primary-900)' _fontweight='300'>{heroTitleOne}</Typography>
-            <Typography type="heading" _color='var(--primary-900)' _fontweight='700'>{heroTitleTwo}{"\u00A0"}<Typography type="heading" _color='var(--tertiary-500)' _fontweight='700' renderInline={true}>{specialHeading}</Typography></Typography>
-            <Typography type="subheading" _color='var(--primary-900)' _fontweight='300'>{heroTitleThree}</Typography>
+            <Typography type="subheading" _color='var(--tertiary-900)' _fontweight='300'>{heroTitleOne}</Typography>
+            <Typography type="heading" _color='var(--tertiary-700)' _fontweight='700'>{heroTitleTwo}{"\u00A0"}<Typography type="heading" _color='var(--tertiary-900)' _fontweight='700' renderInline={true}>{specialHeading}</Typography></Typography>
+            <Typography type="subheading" _color='var(--tertiary-900)' _fontweight='300'>{heroTitleThree}</Typography>
             <br /><br />
             <a className="mail-to" href="mailto:gouravsaini9797@gmail.com"><Typography type="body">{buttonLabel}</Typography></a>
         </div>

@@ -20,7 +20,10 @@
         &>.divider{
             inline-size: 100%;
             block-size: 1px;
-            background-color: var(--secondary-500);
+            background-color: var(--tertiary-900);
+        }
+        &>.description{
+            max-inline-size: 650px;
         }
         &>.personal{
             display: grid;

@@ -38,38 +38,40 @@ let AboutCard: React.FC<IHeroCardProps> = ({
     <article className="about-card">
       {/* <img className="hero-image" src={imgSrc} alt="hero" /> */}
       <div className="about-details">
-        <Typography type="subheading" _color="var(--tertiary-500)">
+        <Typography type="subheading" _color="var(--tertiary-700)">
           {heading}
         </Typography>
         <br />
-        <Typography type="subheading">{aboutMe}</Typography>
+        <Typography type="subheading" _color="var(--teriary-900)">{aboutMe}</Typography>
         <br />
-        <Typography type="body">{description}</Typography>
+        <p className="description">
+        <Typography type="body" _color="var(--tertiary-700)">{description}</Typography>
+        </p>
         <br />
         <div className="divider" aria-hidden={true}></div>
         <br />
         <div className="personal">
           <div className="info">
-            <Typography type="body">{namelabel}</Typography>
-            <Typography type="body" _fontweight="400">
+            <Typography type="body" _color="var(--tertiary-700)">{namelabel}</Typography>
+            <Typography type="body" _fontweight="400" _color="var(--tertiary-900)">
               {name}
             </Typography>
           </div>
           <div className="info">
-            <Typography type="body">{fromLabel}</Typography>
-            <Typography type="body" _fontweight="400">
+            <Typography type="body" _color="var(--tertiary-700)">{fromLabel}</Typography>
+            <Typography type="body" _fontweight="400" _color="var(--tertiary-900)">
               {from}
             </Typography>
           </div>
           <div className="info">
-            <Typography type="body">{ageLabel}</Typography>
-            <Typography type="body" _fontweight="400">
+            <Typography type="body" _color="var(--tertiary-700)">{ageLabel}</Typography>
+            <Typography type="body" _fontweight="400" _color="var(--tertiary-900)">
               {age}
             </Typography>
           </div>
           <div className="info">
-            <Typography type="body">{emailLabel}</Typography>
-            <Typography type="body" _fontweight="400">
+            <Typography type="body" _color="var(--tertiary-700)">{emailLabel}</Typography>
+            <Typography type="body" _fontweight="400" _color="var(--tertiary-900)">
               {email}
             </Typography>
           </div>
