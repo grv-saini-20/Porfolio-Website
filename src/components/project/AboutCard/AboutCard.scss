@@ -1,52 +1,52 @@
-.about-card{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.about-card {
+  // display: grid;
+  // grid-template-columns: repeat(2,auto);
+  // justify-content: center;
+  // align-items: center;
+  // gap: 50px;
+  // @media screen and (width < 768px) {
+  //     grid-template-columns: auto;
+  // }
+  & > .hero-image {
+    inline-size: 100%;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    border-radius: 10px;
     @media screen and (width < 768px) {
+      display: none;
+    }
+  }
+  & > .about-details {
+    & > .divider {
+      inline-size: 100%;
+      block-size: 1px;
+      background-color: var(--tertiary-700);
+    }
+    & > .description {
+      max-inline-size: 850px;
+    }
+    & > .personal {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: flex-start;
+      gap: 10px 30px;
+      @media screen and (width < 768px) {
         grid-template-columns: auto;
+      }
+      & > .info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
     }
-    &>.hero-image{
-        inline-size: 100%;
-        image-rendering: optimizeSpeed;
-        object-fit: cover;
-        border-radius: 10px;
-        @media screen and (width < 768px) {
-            display: none;
-        }
+    & > .download-cv {
+      display: inline-block;
+      text-align: center;
+      inline-size: 150px;
+      background-color: var(--tertiary-900);
+      padding: 10px;
+      border-radius: 6px;
     }
-    &>.about-details{
-        &>.divider{
-            inline-size: 100%;
-            block-size: 1px;
-            background-color: var(--tertiary-900);
-        }
-        &>.description{
-            max-inline-size: 650px;
-        }
-        &>.personal{
-            display: grid;
-            grid-template-columns: repeat(2,auto);
-            justify-content: flex-start;
-            gap: 10px 30px; 
-            @media screen and (width < 768px) {
-                grid-template-columns: auto;
-            }
-            &>.info{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 10px;
-            }
-        }
-        &>.download-cv{
-            display: inline-block;
-            text-align: center;
-            inline-size: 150px;
-            background-color: var(--tertiary-900);
-            padding: 10px;
-            border-radius: 6px;
-        }
-    }
+  }
 }

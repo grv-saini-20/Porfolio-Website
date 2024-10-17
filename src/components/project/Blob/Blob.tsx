@@ -1,12 +1,12 @@
-import React from 'react'
-import './Blob.scss'
+import React from "react";
+import "./Blob.scss";
 
-let Blob:React.FC<{imgSrc: string}> = ({imgSrc}) => {
+let Blob: React.FC<{ imgSrc: string }> = ({ imgSrc }) => {
   return (
     <>
-      <img className='blob-img' src={imgSrc} alt="hero" />
+      <img className="blob-img" src={imgSrc} alt="hero" />
     </>
-  )
-}
+  );
+};
 
-export default Blob
+export default Blob;
